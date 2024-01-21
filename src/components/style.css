@@ -1,0 +1,281 @@
+* {
+    padding: 0vw;
+    margin: 0vw;
+}
+
+/* @import url('https://fonts.googleapis.com
+/css2?family=Bebas+Neue&family=Courgette&family=Edu+VIC+WA+NT+Beginner&family=Nova+Square&family=Rancho&family=Roboto&family=Tangerine&display=swap'); */
+
+/* =============================================================================== */
+
+#work{
+    position: relative;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    height: 27vw;
+    color: white;
+    overflow: hidden;
+}
+#work-head{
+    padding: 5vw;
+    padding-top:10vw;
+}
+#work h2 ,#education-head h2,#skill h2{
+    font-size: 1.7vw;
+    font-family: 'Nova Square', cursive;
+}
+#work h2:hover,#education-head h2:hover,#skill h2:hover,
+#about-head h1:hover,#contactheader:hover{
+    text-shadow:0 0 0.6vw rgba(255, 255, 255, 0.673);
+} 
+#work h3,#education-head h3,#skill h3{
+    font-size: 1.3vw;
+    padding-top: 0.4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(154, 154, 154);
+}
+#work img{
+    width: 32%;
+    height: fit-content;
+    padding-right: 24%;
+    position: relative;
+    z-index: 1;
+    padding-top: 5%;
+}
+#work h1,h4,h5{
+    font-size:5vw;
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 36%;
+    left: 70%;
+    color: rgb(213, 213, 213);
+    z-index: 4;
+    font-weight:700;
+}
+#work h1{
+    top:53%;
+    -webkit-text-stroke-width:0.2vw;
+    -webkit-text-stroke-color: #ff2525;
+    color: transparent;
+}
+#work h5{
+    top: 70%;
+    color: #e5ff00;
+}
+
+
+/* ================================================ */
+
+
+#project{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    /* height: 48.1vw; */
+    color: white;
+    padding: 1.0%;
+}
+
+.project-head{padding: 2% 3%;}
+
+#project1,#project2,#project3{
+    display: flex;
+    margin-bottom:1.8%;
+}
+#project1 {
+    background-color: #ffffff91;
+}
+#project2 {
+    background-color: #ff6c00de;
+}
+#project3 {
+    background-color: rgb(157, 236, 114);
+}
+.span123{
+    color:black;font-size: 1.5vw;
+}
+#project1 img,#lost1,#project3 img{
+    width: 45%;
+    padding: 2%;
+}
+#lost2{
+    display: none;
+}
+#project1 h1,#project2 h1,#project3 h1{
+    font-family: 'Nova Square', cursive;
+    font-size: 2.4vw;
+    color: black;
+    padding: 2% 0%;
+}
+#project2 h1,#project3 h1{padding:3% 0%;}
+#project1 h2,#project2 h2,#project3 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2%;
+}
+#project1 h3,#project2 h3,#project3 h3{
+    font-family:'Roboto', sans-serif;
+    font-size: 1.3vw;
+    margin-bottom: 5%;
+}
+#project2 h3,#project3 h3{margin-bottom:6%;}
+#project1 a,#project2 a,#project3 a{    
+    color: rgb(0, 0, 0);
+    font-size: 1.6vw;
+    text-decoration: none;
+    padding: 1.5% 3%;
+    background-color: #ffffff91;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 0.5vw;
+    border: 0.27vw solid black
+}
+#project2 a{
+    background-color:#ff6c00de;
+}
+#project2 a:hover{
+    background-color:rgb(255, 174, 0);
+}
+#project3 a{
+    background-color:rgb(135, 241, 78);
+    border:0.27vw solid rgb(59, 59, 59);
+}
+#project3 a:hover{
+    background-color:rgb(99, 233, 27);
+}
+#project1 a:hover{
+    background-color:rgb(255, 255, 255);
+}
+
+
+
+
+
+#education-head{
+    position: relative;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    color: white;
+    padding: 2% 10%;
+    height:20vw;
+}
+#eduhead{
+    padding-top:10%;padding-right:3%;
+}
+#education-head img{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    padding-left: 13%;
+    z-index: 2;
+}
+#education-head h1{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.8vw;
+    left: 13%;
+    top: 30%;
+    text-align: right;
+    z-index: 1;
+}
+#log12{
+    position:absolute;
+    -webkit-text-stroke-width:0.15vw;
+    -webkit-text-stroke-color: #ffffff;
+    color: transparent;
+    z-index: 5;
+}
+#education-body{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height:45vw;
+    overflow: hidden;
+}
+
+
+
+
+#skill{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 34vw;
+}
+#skill-head{
+    padding-top: 3%;
+    padding-left: 34%;
+}
+.bodysection{
+    display: flex;
+}
+#skill-body1,#skill-body2{
+    display: flex;
+    padding:2%;
+    padding-bottom:1.5%;
+}
+.skill2022 {
+    width: 12vw;
+    background-color: rgb(107, 107, 107);
+    text-align: center;
+    margin-left: 3.25vw;
+    height: 7vw;
+    font-size: 1.6vw;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 3.2vw;
+}
+.skill2022:hover{
+    background-color: rgb(53, 53, 53);
+    /* color: black; */
+    font-size:1.8vw;
+    font-weight: 600;
+}
+.skill2022 p{
+    color: gold;
+    padding-left: 1.5%;
+    padding-top: 1%;
+}
+.skill2022 p:hover{
+    text-shadow:0 0 2vw rgb(255, 200, 0);
+}
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+#contact{
+    position: relative;
+    background-color: black;
+    z-index: 6;
+    height: 30vw;
+    text-align: center;
+}
+#contactheader{
+    font-size: 1.7vw;
+    position: absolute;
+    color: white;
+    left: 58%;
+    top: 26%;
+    letter-spacing: 0.15vw;
+    font-family:'Nova Square', cursive;
+}
+#sticker1{
+    width: 22%;
+    position: absolute;
+    left: 15%;
+    top: -5%;
+    z-index: 6;
+
+}
+
+
+

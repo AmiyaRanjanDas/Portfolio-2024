@@ -1,0 +1,27 @@
+body{
+    cursor: none;
+}
+.custom-cursor, .following-element,.following-element-hovered {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background: rgb(255, 255, 255); 
+    border-radius: 50%;
+    pointer-events: none; 
+    transform: translate(-50%,-50%);
+    z-index: 100;
+  }
+  .following-element {
+    width: 25px;
+    background: transparent;
+    height: 25px;
+    border: 2px solid white;
+    z-index: 99;
+  }
+  .following-element-hovered{
+    width: 25px;
+    background: wheat;
+    height: 25px;
+    /* border: 2px solid white; */
+    z-index: 99;
+  }

@@ -1,0 +1,398 @@
+#journey {
+  width: 100%;
+  height: 600vh;
+  position: relative;
+  /* background: rgb(0, 0, 0); */
+}
+.journeydiv {
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+#scroll_div {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  width: 300%;
+  background: rgb(0, 0, 0);
+}
+.scroll_sub_div {
+  position: relative;
+  width: 100vw;
+}
+
+/* =================rocket====================== */
+.rocket {
+  z-index: 6;
+  position: sticky;
+  left: 75%;
+  transform: rotate(90deg);
+}
+.rocket img {
+  position: relative;
+  left: 38vh;
+  top: 40%;
+  width: 5vh;
+}
+.rocket img:hover{
+  animation: animate 0.2s ease infinite;
+}
+.rocketImg {
+  animation: animate 0.2s ease infinite;
+  z-index: 2;
+}
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+}
+.rocketDiv {
+  position: relative;
+  left: 39.87vh;
+  height: 25px;
+  top: 39%;
+  width: 1.28vh;
+  z-index: 1;
+  filter: blur(6px);
+  background: rgb(182, 182, 182);
+}
+
+/*========================== 1st section ==============================*/
+.scroll_sub_div:nth-child(2){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#journey-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6vw 4vw 0;
+}
+#journey-head h2 {
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Nova Square", cursive;
+}
+#journey-head h2:hover {
+  text-shadow: 0 0 1vw white;
+}
+#journey-head h3 {
+  font-size: 1.07vw;
+  font-weight: 600;
+  padding-top: 0.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(154, 154, 154);
+}
+#gif1,#gif2{
+  position: absolute;
+  border-radius: 50%;
+}
+#gif1{
+  top: 10%;
+  right: 10%;
+  width: 10%;
+}
+#gif2{
+  bottom: 10%;
+  left: 12%;
+  width: 10%;
+}
+
+#div1h1{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  -webkit-text-stroke-width:0.25vw;
+  -webkit-text-stroke-color:rgb(26, 26, 26);
+  color: black;
+  white-space: nowrap;
+}
+#div1h2,#div1h3{
+  position: absolute;
+  font-size: 310%;
+  color: white;
+}
+#div1h2{
+  top: 33%;
+}
+#div1h3{
+  top: 59%;
+  left: 21%;
+}
+
+/*========================== 2nd section ==============================*/
+.scroll_sub_div:nth-child(3){
+  background: linear-gradient(90deg, rgba(26,26,26,1) 60%,rgb(16, 16, 16) 80%, rgba(0,0,0,1) 100%);
+}
+.scroll_sub_div:nth-child(3) .row{
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  width: 50%;
+  margin: 0;
+}
+.scroll_sub_div:nth-child(3) .col{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.card{
+  position: relative;
+  background: black;
+  border: 20px;
+  overflow: hidden;
+  width: 50%;
+  height: 75%;
+  z-index: 7;
+}
+.card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.276);
+  clip-path: circle(45% at 80% 14%);
+  transition: 0.5s ease-in-out;
+}
+.card:hover:before{  
+  clip-path: circle(60% at 80% 20%);
+}
+.card:after{
+  content:'Code';
+  position: absolute;
+  font-size: 505%;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.14);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+#card2:after{
+  content:'Project';
+  font-size: 440%;
+}
+#card3:after{
+  content:'Intern';
+  font-size: 530%;
+}
+#col-3{
+  padding:25% 0;
+  justify-content:center;
+}
+.imgBx{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 100%;
+  height: 75%;
+  transition: 0.75s;
+}
+.card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+}
+.imgBx img{
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-25deg);
+  transition: 0.5s;
+  width: 35%;
+  animation: animated 2s infinite;
+}
+@keyframes animated {
+  50% {    
+  transform: translate(-50%,-50%) rotate(-10deg);
+  }
+}
+.card:hover .imgBx img{
+  transform: translate(-50%,-50%) rotate(0deg);
+}
+.contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index:3;
+  color: rgb(255, 255, 255);
+}
+.contentBx h2{  
+  font-size: 180%;
+  transition: 1s;
+}
+.card:hover .contentBx h2{
+  color: white;
+  text-shadow:0 0 1vw white;
+}
+.contentBx *{
+  margin: 0;
+}
+
+
+/* 3rd section */
+.singleTraveler{
+  position: absolute;
+  overflow: hidden;
+  border-radius: 3%;
+  gap: 1rem;
+  margin: auto;
+}
+.singleTraveler:nth-child(1) {
+  width: 27%;
+  height: 23%;
+  top: 23%;
+  left: 7%;
+}
+.singleTraveler:nth-child(2) {
+  width: 30%;
+  top: 49%;
+  left: 4%;
+  height: 30%;
+}
+.singleTraveler:nth-child(3) {
+  width: 28%;
+  top: 34%;
+  left: 35.5%;
+  height: 33%;
+}
+.singleTraveler .destinationImage,
+.singleTraveler .travelerName {
+  position: absolute;
+}
+.singleTraveler .destinationImage {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+.singleTraveler .travelerName {
+  bottom: -100%;
+  width: 100%;
+  height: max-content;
+  padding: 0.5rem 1.5rem;
+  transition: 0.4s ease-in-out;
+  animation: animatedBorder 2.3s infinite;
+  background-color: #ffffff80;
+}
+.singleTraveler .travelerName span1 {
+  display: block;
+  color: black;
+  font-weight: 700;
+}
+.singleTraveler .travelerName a {
+  margin: 0;
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+}
+@keyframes animatedBorder {
+  0%,
+  100% {
+    border-radius: 0rem;
+  }
+  50% {
+    border-radius: 2rem;
+  }
+}
+.singleTraveler:hover .travelerName {
+  bottom: 0;
+  transition: 1s ease-in-out;
+}
+
+
+/* ==========================responsive=================== */
+@media only screen and (max-width:768px)
+{
+  #scroll_div {
+    height: 60%;
+    font-size: 6.8px;
+  }
+  .scroll_sub_div:nth-child(2){
+    font-size: 8.5px;
+  }
+  .scroll_sub_div:nth-child(3){
+    font-size: 8.5px;
+  }
+}
+@media only screen and (max-width:425px)
+{
+  #journey-head h2 {
+    font-size: 3vw;
+  }
+  #journey-head h3 {
+    font-size: 2vw;
+  }
+  #journey-head {
+    padding: 6vw 12vw 0;
+    top: -30%;
+  }
+  .scroll_sub_div:nth-child(2){
+    font-size: 6px;
+  }
+  #gif1, #gif2 {
+    width: 12%;
+  }
+  .card{
+    width: 90%;
+    height: 70%;
+  }
+  #col-3{
+    padding:35% 0;
+  }
+  .scroll_sub_div:nth-child(3){
+    font-size: 8.5px;
+  }
+  .singleTraveler:nth-child(1) {
+    width: 32%;
+    height: 23%;
+    left: 7%;
+  }
+  .singleTraveler:nth-child(2) {
+    width: 35%;
+    left: 4%;
+    height: 30%;
+  }
+  .singleTraveler:nth-child(3) {
+    width: 40%;
+    left: 40.5%;
+    height: 33%;
+  }
+}
+@media only screen and (max-width:320px)
+{
+  .scroll_sub_div:nth-child(2){
+    left: -3%;
+    font-size: 5.4px;
+  }
+  .card{
+    width: 95%;
+    height: 65%;
+  }
+  #col-3{
+    padding:45% 0;
+  }
+  .scroll_sub_div:nth-child(3){
+    font-size: 6.5px;
+  }
+}

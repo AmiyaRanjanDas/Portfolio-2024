@@ -1,0 +1,208 @@
+* {
+  scroll-behavior: smooth;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+/* ==================================Project=================================== */
+#project {
+  padding-top: 5vw;
+}
+#project_head {
+  padding: 3vw;
+}
+#project_head h2 {
+  font-size: 1.2vw;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Nova Square", cursive;
+}
+#project_head h2:hover {
+  text-shadow: 0 0 1vw white;
+}
+#project_head h3 {
+  font-size: 1.07vw;
+  font-weight: 600;
+  padding-top: 0.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(154, 154, 154);
+}
+.row {
+  padding-bottom: 8vw;
+  position: relative;
+  overflow: hidden;
+}
+.row a{
+  cursor: none;
+}
+
+.row a + .following-element {
+  background: red ;
+}
+.row a:hover .following-element{
+  background: red;
+}
+
+#coloumns {
+  position: relative;
+  overflow: hidden;
+}
+#coloumn_video{
+    width: 70%;
+}
+#proimg1 {
+  opacity: 0.3;
+}
+
+.project_datas {
+  padding: 3vw;
+  z-index: 3;
+}
+.project_datas p {
+  text-align: justify;
+}
+#pic1,
+#pic2 {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  bottom: 4vw;
+  right: 3.5vw;
+  animation: rotate 10s linear infinite;
+}
+#pic2 {
+  bottom: 3vw;
+  left: 0.5vw;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ===================================================== */
+/* =================Project Animation=================== */
+/* ===================================================== */
+
+/* =================Gradient=================== */
+#gradient {
+  position: absolute;
+  width: 100%;
+  height: 10vw;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 2;
+}
+
+/* =================Animation=================== */
+#animation {
+  padding: 0%;
+  position: relative;
+  overflow: hidden;
+  height: 100vw;
+  background: black;
+}
+#col1,
+#col2,
+#col3,
+#col4 {
+  position: absolute;
+  width: 25%;
+}
+#col2 {
+  left: 25vw;
+}
+#col3 {
+  left: 50vw;
+}
+#col4 {
+  left: 75vw;
+}
+#imgs {
+  width: 100%;
+  padding-bottom: 0.5vw;
+}
+
+/* ===================woobly effect=================== */
+.App {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.wobble {
+  width: 28rem;
+  height: 26rem;
+  background: url("../images/grid3.png");
+  opacity: 0.8;
+  border-radius: 50%;
+  transition: all 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: rotation 30s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======================responsive==================== */
+
+@media (max-width: 768px) {
+  /* headers */
+  #project_head {
+    padding: 4vw 5vw 10vw;
+  }
+  #project_head h2 {
+    font-size: 4vw;
+    font-family: "Nova Square", cursive;
+  }
+  #project_head h3 {
+    font-size: 3vw;
+    padding-top: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(154, 154, 154);
+  }
+  #coloumns {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    height: 180px;
+  }
+  /* wobble */
+  .wobble {
+    width: 20rem;
+    height: 18rem;
+  }
+  /* for ordering */
+  .custom-order {
+    order: 2;
+  }
+  .row {
+    margin: 20px 0;
+  }
+
+  /* animation height increase */
+  #animation{
+    height: 140vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .wobble {
+    width: 18rem;
+    height: 16rem;
+  }
+  #coloumn_video{
+    width: 75%;
+}
+}
